@@ -1,0 +1,134 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.barra{
+    background-color: rgba(114, 89, 255, 0.2);
+    background-size:cover; 
+    height: 100vh;
+}
+
+.navbar{ 
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rebeccapurple;
+    box-shadow: 0px 30px 35px rebeccapurple;
+}
+
+.navbar .logo {
+    width: 80px;
+    height: auto;
+    padding: 5px 80px;
+}
+
+@media screen and (min-width: 650px) {
+.navbar ul {
+    float: right;
+    margin-right: 100px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end
+     
+   }
+ }
+
+.navbar ul li{
+	list-style: none;
+	margin: 0 8px;
+   
+	
+}
+
+.navbar ul li a{
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	padding: 6px 13px;
+	text-decoration: none;
+	transition: .4s;
+}
+
+.navbar ul li a:hover{
+    color: rebeccapurple;
+	background: white;
+	border-radius: 2px;
+}
+
+.barra .center{
+	position: absolute;
+	left: 50%;
+	top: 35%;
+	transform: translate(-50%, -50%);
+	font-family: sans-serif;
+	user-select: none;
+}
+
+.center h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: black;
+	font-size: 40px;
+	width: 900px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.center h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: orange;
+	font-size: 30px;
+	margin-top: 10px;
+	width: 885px;
+	text-align: center;
+}
+
+.center p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rebeccapurple;
+    text-align: center;
+
+}
+
+.center .buttons{
+	margin: 50px 400px;
+}
+
+.buttons button{
+	height: 50px;
+	width: 150px;
+	font-size: 18px;
+	font-weight: 600;
+	color: white;
+	background: rebeccapurple;
+	outline: none;
+	cursor: pointer;
+	border: 1px solid rebeccapurple;
+	border-radius: 25px;
+	transition: .4s;
+    box-shadow: 20px 15px 10px rgb(141, 111, 172);
+}
+
+
+.buttons button:hover{
+	background: #AD26C2;
+}
+
+@media screen and (max-width: 650px) {
+	.barra{
+		background-color: white;
+
+	}
+ }	
+
+ @media screen and (max-width: 650px) {
+	.navbar {
+		background: rebeccapurple;
+		opacity: 70%;
+
+	}
+ }	
+
